@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#12080e" />
+  <title id="pageTitle">Studio Beleza Feminina | Salão de Beleza em Campinas</title>
+  <meta id="pageDescription" name="description" content="Studio Beleza Feminina no Centro de Campinas. Agende serviços de beleza pelo WhatsApp." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#topo" class="brand" aria-label="Voltar ao início">
+        <div class="brand-mark"><img src="assets/logo-beleza-feminina.png" alt="Logo Studio Beleza Feminina"></div>
+        <div>
+          <strong id="brandName">Studio Beleza Feminina</strong>
+          <span id="brandTagline">Salão de Beleza • Campinas</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Menu principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#diferenciais">Diferenciais</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a id="headerWhatsapp" class="btn btn-ghost hide-mobile" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-primary" href="#contato">Agendar</a>
+        <button id="menuBtn" class="menu-btn" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a id="mobileWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="topo" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <img class="hero-logo" src="assets/logo-beleza-feminina.png" alt="Studio Beleza Feminina">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span id="heroEyebrow">Beleza feminina no Centro de Campinas</span>
+          </div>
+
+          <h1 id="heroTitle">Seu cabelo, sua beleza, do seu jeito.</h1>
+          <p id="heroText" class="hero-text">
+            Cortes, coloração, tratamentos e finalizações com atendimento próximo e cuidado em cada etapa.
+          </p>
+
+          <div class="hero-actions">
+            <a id="heroCta" href="#contato" class="btn btn-primary btn-lg">Agendar pelo WhatsApp</a>
+            <a href="#resultados" class="btn btn-secondary btn-lg">Ver resultados</a>
+          </div>
+
+          <div id="heroStats" class="hero-stats"></div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="hero-glow"></div>
+
+          <figure class="hero-main-photo parallax" data-depth="0.35">
+            <img id="heroImage" src="" alt="Resultado de cabelo do Studio Beleza Feminina" />
+          </figure>
+
+          <figure class="floating-photo floating-one parallax" data-depth="0.85">
+            <img id="floatingImage1" src="" alt="Coloração sendo realizada no Studio Beleza Feminina" />
+          </figure>
+
+          <figure class="floating-photo floating-two parallax" data-depth="0.65">
+            <img id="floatingImage2" src="" alt="Design de sobrancelhas no Studio Beleza Feminina" />
+          </figure>
+
+          <div class="floating-copy parallax" data-depth="1.05">
+            <span id="floatingLabel">Experiência premium</span>
+            <strong id="floatingTitle">Resultado que combina com você.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-wrap" aria-label="Diferenciais">
+      <div class="marquee">
+        <div class="marquee-track" id="marqueeTrack"></div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Serviços</span>
+          <h2 id="servicesTitle">Soluções pensadas para transformar sua experiência.</h2>
+          <p id="servicesText">
+            Destaque aqui os serviços que mais vendem ou os que você quer impulsionar.
+          </p>
+        </div>
+
+        <div id="servicesGrid" class="services-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container editorial-grid">
+        <div class="editorial-copy reveal">
+          <span class="kicker">Por que escolher</span>
+          <h2 id="whyTitle">Profissionalismo que aparece em cada detalhe.</h2>
+          <p id="whyText">
+            Uma boa landing page precisa vender percepção de valor antes de vender preço.
+          </p>
+
+          <div id="whyList" class="check-list"></div>
+        </div>
+
+        <div class="editorial-cards reveal">
+          <div class="metric-card">
+            <span id="metric1Label">Atendimento</span>
+            <strong id="metric1Value">100%</strong>
+            <p id="metric1Text">Personalizado para cada cliente.</p>
+          </div>
+
+          <div class="metric-card offset">
+            <span id="metric2Label">Experiência</span>
+            <strong id="metric2Value">Premium</strong>
+            <p id="metric2Text">Do primeiro contato ao pós-atendimento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultados" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Resultados</span>
+          <h2 id="galleryTitle">Trabalhos que falam por si.</h2>
+          <p id="galleryText">Troque pelas fotos reais do cliente para aumentar a confiança e a conversão.</p>
+        </div>
+
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section section-dark">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img id="aboutImage" src="" alt="Profissional do Studio Beleza Feminina" />
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="kicker">Sobre</span>
+          <h2 id="aboutTitle">Beleza com técnica, cuidado e identidade.</h2>
+          <p id="aboutText">
+            Use esta seção para apresentar a profissional, o studio, experiência, formação e diferenciais.
+          </p>
+
+          <div id="aboutHighlights" class="about-highlights"></div>
+
+          <a id="aboutCta" class="btn btn-secondary" href="#contato">Quero conhecer</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Informações reais</span>
+          <h2 id="testimonialsTitle">Experiências que viram recomendação.</h2>
+          <p id="testimonialsText">Substitua estes exemplos por avaliações reais do Google, Instagram ou WhatsApp.</p>
+        </div>
+
+        <div id="testimonialsGrid" class="testimonials-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="before-after reveal">
+          <div class="before-after-copy">
+            <span class="kicker">Nosso trabalho</span>
+            <h2 id="baTitle">Mostre a transformação.</h2>
+            <p id="baText">Uma das seções mais fortes para cabelo, estética, pele, sobrancelha e procedimentos visuais.</p>
+          </div>
+
+          <div class="ba-grid">
+            <figure>
+              <img id="beforeImage" src="" alt="Cuidado capilar no lavatório" />
+              <figcaption>Cuidado & tratamento</figcaption>
+            </figure>
+            <figure>
+              <img id="afterImage" src="" alt="Resultado de cabelo finalizado" />
+              <figcaption>Resultado & estilo</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-layout">
+        <div class="faq-copy reveal">
+          <span class="kicker">FAQ</span>
+          <h2 id="faqTitle">Tire as principais dúvidas antes mesmo do contato.</h2>
+          <p id="faqText">Isso reduz objeções e deixa o lead mais preparado para agendar.</p>
+        </div>
+
+        <div id="faqList" class="faq-list reveal"></div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <span class="kicker">Agendamento</span>
+            <h2 id="contactTitle">Pronta para cuidar de você?</h2>
+            <p id="contactText">Preencha os dados ou chame diretamente no WhatsApp.</p>
+
+            <div class="contact-links">
+              <a id="contactWhatsapp" href="#" target="_blank" rel="noopener">Falar no WhatsApp ↗</a>
+              <a id="instagramLink" href="#" target="_blank" rel="noopener">Ver Instagram ↗</a>
+              <span id="addressText">Seu endereço aqui</span>
+            </div>
+          </div>
+
+          <form id="leadForm" class="lead-form">
+            <label>
+              Nome
+              <input name="nome" type="text" placeholder="Seu nome" required />
+            </label>
+
+            <label>
+              WhatsApp
+              <input name="telefone" type="tel" placeholder="(19) 99999-9999" required />
+            </label>
+
+            <label>
+              Serviço de interesse
+              <select id="serviceSelect" name="servico"></select>
+            </label>
+
+            <label>
+              Mensagem
+              <textarea name="mensagem" placeholder="Conte rapidamente o que você procura"></textarea>
+            </label>
+
+            <button class="btn btn-primary btn-lg full" type="submit">Solicitar atendimento</button>
+            <small>Ao enviar, será aberta uma mensagem pronta no WhatsApp do Studio para você concluir o atendimento.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="mapSection" class="map-section">
+      <iframe
+        id="mapFrame"
+        title="Mapa"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="">
+      </iframe>
+    </section>
+  </main>
+
+  <a id="floatingWhatsapp" class="floating-whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span>✦</span>
+    WhatsApp
+  </a>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong id="footerBrand">Studio Beleza Feminina</strong>
+        <p id="footerText">Beleza, cabelo e cuidado feminino em Campinas/SP.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-copy">
+        <span id="footerYear"></span>
+        <span>Centro de Campinas/SP.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
